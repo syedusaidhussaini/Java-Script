@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS ASSIGNMENTS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JS ASSIGNMENTS</h1>
+  <script>
+
+// chapter 1,2,3,4
+    // let firstName = "Syed";
+    // let lastName = "Usaid"; 
+    // let age = 19;
+
+    // alert("Hello " + firstName + " " + lastName + ", You are " + age + " years old");
+
+// chapter 5,6,7
+    // // let u = 19;
+    // // let z = u++ + ++u - --u + u--; 
+
+    // // alert("Your age will be this after these problems: " + u);
+    // // alert("You will be married after these years: " + z); 
+
+// chapter 9
+
+//     let firstName = prompt("Enter your first name:");
+//     let lastName = prompt("Enter your last name:");
+//     let age = prompt("Enter your age:");
+ 
+// alert("Hello " + firstName + " " + lastName + ", You are " + age + " years old");
+
+
+// chapter 10,11,12,13,14
+
+// chapter 15,16,17
+
+// let courses = [];
+
+// for (let i = 1; i <= 3; i++) {
+//     let courseName = prompt("Enter the name for course " + i, "Course " + i);
+//     courses.push(courseName);
+// }
+
+
+// alert("Your courses: " + courses.join(", "));
+
+
+// for (let i = 0; i < courses.length; i++) {
+//     let editedCourse = prompt("Edit course " + (i + 1), courses[i]);
+//     if (editedCourse !== null && editedCourse !== courses[i]) { // Only update if there is a change
+//         courses.splice(i, 1, editedCourse);
+//     }
+// }
+
+// // Step 5: Display the updated courses array
+// alert("Your total  courses: " + courses.join(", "));
+
+//  chapter 18,19,20
+
+// let courses = [];
+
+
+// for (let i = 1; i <= 2; i++) {
+//     let courseName = prompt("Enter course name " + i, "Course " + i);
+//     courses.push(courseName);
+// }
+
+
+// alert("Your initial courses: " + courses.join(", "));
+
+// for (let i = 0; i < courses.length; i++) {
+//     let moreCourse = prompt("More course " + (i + 1), courses[i]);
+//     if (moreCourse !== null && moreCourse !== courses[i]) { 
+//         courses.splice(i, 1, moreCourse); 
+// }
+// }
+
+// alert("Your updated courses: " + courses.join(", "));
+
+// chapter 21,22,23,24,25,26,27,28,29,30
+
+// // Step 1: Take a decimal input from the user
+// let userInput = parseFloat(prompt("Enter a decimal number:"));
+
+// // Step 2: Convert the number to the next greater whole number
+// let roundedNumber = Math.ceil(userInput);
+
+// // Step 3: Declare a string variable
+// let text = "This is my dummy text";
+
+// // Step 4: Slice the text based on the rounded number
+// let slicedText = text.slice(0, roundedNumber); // e.g., "This"
+
+// // Step 5: Reverse the sliced string using a for loop
+// let reversedText = "";
+// for (let i = slicedText.length - 1; i >= 0; i--) {
+//     reversedText += slicedText[i]; // Concatenate each character in reverse order
+// }
+
+// // Step 6: Display the reversed string in an alert
+// alert(reversedText); // This will show "shiT"
+
+//  chapter 31,32,33,34
+
+// Step 1: Input user details through prompts
+    // let name = prompt("Enter your name:", "Random Name");
+    // let dobDate = prompt("Enter your birth date (e.g., 00):", "00");
+    // let dobMonth = prompt("Enter your birth month (e.g., 00):", "00");
+    // let dobYear = prompt("Enter your birth year (e.g., 0000):", "0000");
+
+    // // Step 2: Create a date object for the date of birth
+    // let dob = new Date(`${dobYear}-${dobMonth}-${dobDate}T00:00:00`);
+
+    // // Step 3: Get the current date and time
+    // let now = new Date();
+
+    // // Step 4: Determine the time of day
+    // let hours = now.getHours();
+    // let timeOfDay;
+
+    // if (hours < 12) {
+    //     timeOfDay = "Good Morning";
+    // } else if (hours < 18) {
+    //     timeOfDay = "Good Afternoon";
+    // } else if (hours < 21) {
+    //     timeOfDay = "Good Evening";
+    // } else {
+    //     timeOfDay = "Good Night";
+    // }
+
+    // // Step 5: Calculate age in years, months, days, hours, minutes, and seconds
+    // let ageInMilliseconds = now - dob;
+    // let ageDate = new Date(ageInMilliseconds);
+
+    // let years = ageDate.getUTCFullYear() - 1970; // Since epoch is 1970
+    // let months = ageDate.getUTCMonth();
+    // let days = ageDate.getUTCDate() - 1; // Subtracting one because getUTCDate returns the day of the month (1-31)
+    // let hoursAge = now.getUTCHours();
+    // let minutesAge = now.getUTCMinutes();
+    // let secondsAge = now.getUTCSeconds();
+
+    // // Step 6: Calculate total age in days
+    // let totalDays = Math.floor(ageInMilliseconds / (1000 * 60 * 60 * 24));
+
+    // // Step 7: Calculate time left for the next birthday
+    // let nextBirthday = new Date(now.getFullYear() + 1, dob.getMonth(), dob.getDate());
+    // let timeLeftInMilliseconds = nextBirthday - now;
+
+    // let daysLeft = Math.floor(timeLeftInMilliseconds / (1000 * 60 * 60 * 24));
+    // let hoursLeft = new Date(timeLeftInMilliseconds).getUTCHours();
+    // let minutesLeft = new Date(timeLeftInMilliseconds).getUTCMinutes();
+    // let secondsLeft = new Date(timeLeftInMilliseconds).getUTCSeconds();
+
+    // // Step 8: Print messages to the console
+    // console.log(`Hello ${name}, ${timeOfDay}`);
+    // console.log(`Your DOB is ${dob.toLocaleString('en-PK', { timeZone: 'Asia/Karachi' })}`);
+    // console.log(`You are ${years} years ${months} months ${days} days ${hoursAge} hours ${minutesAge} minutes ${secondsAge} seconds old`);
+    // console.log(`Your Age in Days: ${totalDays}`);
+
+    // if (now.getMonth() === dob.getMonth() && now.getDate() === dob.getDate()) {
+    //     console.log(`Happy Birthday ${name}! Today is your ${years}th Birthday.`);
+    // } else {
+    //     console.log(`How much time left until your next birthday? ${daysLeft} days ${hoursLeft} hours ${minutesLeft} minutes ${secondsLeft} seconds`);
+    // }
+
+</script>
+
+</body>
+</html>
